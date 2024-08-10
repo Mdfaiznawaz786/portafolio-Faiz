@@ -30,9 +30,7 @@ const Project = () => {
                 <h3>
                     <FormattedMessage
                         id='Gitlytics'
-                        defaultMessage='Gitlytics'
-
-                    />
+                        defaultMessage='Gitlytics' />
                 </h3>
                  <p>
                     <FormattedMessage

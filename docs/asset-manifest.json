@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio-Faiz/static/css/main.ce1311ad.css",
-    "main.js": "/portafolio-Faiz/static/js/main.d4fee810.js",
+    "main.js": "/portafolio-Faiz/static/js/main.26856591.js",
     "static/js/787.65f72c27.chunk.js": "/portafolio-Faiz/static/js/787.65f72c27.chunk.js",
     "static/media/Thumbs.db": "/portafolio-Faiz/static/media/Thumbs.735170b30af6b4c4247f.db",
     "static/media/proyecto-app-17-com.png": "/portafolio-Faiz/static/media/proyecto-app-17-com.1cacb50e9e33a1ece5a4.png",
@@ -60,11 +60,11 @@
     "static/media/proyecto-app-2.jpg": "/portafolio-Faiz/static/media/proyecto-app-2.5d8ddf1cc2638b419fd5.jpg",
     "index.html": "/portafolio-Faiz/index.html",
     "main.ce1311ad.css.map": "/portafolio-Faiz/static/css/main.ce1311ad.css.map",
-    "main.d4fee810.js.map": "/portafolio-Faiz/static/js/main.d4fee810.js.map",
+    "main.26856591.js.map": "/portafolio-Faiz/static/js/main.26856591.js.map",
     "787.65f72c27.chunk.js.map": "/portafolio-Faiz/static/js/787.65f72c27.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce1311ad.css",
-    "static/js/main.d4fee810.js"
+    "static/js/main.26856591.js"
   ]
 }

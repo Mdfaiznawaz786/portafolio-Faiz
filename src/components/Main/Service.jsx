@@ -20,7 +20,7 @@ const Service = () => (
                 <h3>
                     <FormattedMessage
                         id='Student Leader'
-                        defaultMessage='Student Leader  at University of Buffalo , SUNY'
+                        defaultMessage='Student Leader at University of Buffalo , SUNY'
                     />
                 </h3>
                 <p>
