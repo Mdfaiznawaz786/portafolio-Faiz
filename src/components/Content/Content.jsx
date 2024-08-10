@@ -40,13 +40,13 @@ const Content = () => (
                     
                 </div>
                 <div className="wrapper justify-center" style={ {display : 'flex' }}>
-                    <a className="button" href="https://www.linkedin.com/in/esteban-nahuel-carrizo-69715422b/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200">
+                    <a className="button" href="https://www.linkedin.com/in/mohammed-faiz-nawaz-0b139b22b/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200">
                         <div className="icon">
                             <i className="fab fa-linkedin"></i>
                         </div>
                         <span>Linkedin</span>
                     </a>
-                    <a className="button" href="https://github.com/Nawaz2000/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1400">
+                    <a className="button" href="https://github.com/Mdfaiznawaz786" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1400">
                         <div className="icon">
                             <i className="fab fa-github"></i>
                         </div>
