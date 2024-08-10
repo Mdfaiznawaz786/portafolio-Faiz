@@ -19,8 +19,8 @@ const Service = () => (
                 <i className="fas fa-drafting-compass"></i>
                 <h3>
                     <FormattedMessage
-                        id='Student Leader at University of Buffalo , SUNY'
-                        defaultMessage='Student Leader'
+                        id='Student Leader'
+                        defaultMessage='Student Leader  at University of Buffalo , SUNY'
                     />
                 </h3>
                 <p>

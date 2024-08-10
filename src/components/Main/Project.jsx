@@ -30,10 +30,16 @@ const Project = () => {
                 <h3>
                     <FormattedMessage
                         id='Gitlytics'
-                        defaultMessage='Developed a full-stack web application using with Flask serving a REST API with React as the frontend'
+                        defaultMessage='Gitlytics'
 
                     />
                 </h3>
+                 <p>
+                    <FormattedMessage
+                        id='design-info'
+                        defaultMessage='Developed a full-stack web application using with Flask serving a REST API with React as the frontend'
+                    />
+                </p>
                 <p>
                     <FormattedMessage
                         id='design-info'
