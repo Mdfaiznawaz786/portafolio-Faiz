@@ -18,7 +18,7 @@ const Content = () => (
                 <p data-aos="fade-up" data-aos-delay="600">
                     <FormattedMessage
                         id='greeting'
-                        defaultMessage="Hola, I'm"
+                        defaultMessage="Hello, I'm"
                     />
                 </p>
                 <h1 data-aos="fade-up" data-aos-delay="800">
@@ -30,13 +30,13 @@ const Content = () => (
                 <p data-aos="fade-up" data-aos-delay="1000">
                     <FormattedMessage
                         id='rol'
-                        defaultMessage='Software Developer'
+                        defaultMessage='Software Engineer'
                     />
                 </p>
 
                 <div className="redes-sociales">
                     <a href="https://www.linkedin.com/in/mohammed-faiz-nawaz-0b139b22b/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200"><i className="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/Mdfaiznawaz786" data-aos-delay="1400"><i className="fab fa-github"></i></a>
+                    <a href="https://github.com/Mdfaiznawaz786" target="_blank" rel="noopener noreferrer" data-aos-delay="1400"><i className="fab fa-github"></i></a>
                     
                 </div>
                 <div className="wrapper justify-center" style={ {display : 'flex' }}>

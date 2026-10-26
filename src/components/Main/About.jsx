@@ -1,11 +1,6 @@
 import React from 'react';
 import '../../pages/About/AboutPage.css'
-import { Link } from 'react-router-dom';
 import cv from '../../cv/resume.pdf';
-import { ButtomGet } from '../ButtomGet/ButtomGet';
-import az from '../../img/azure_image.png'
-import dc from '../../img/docker.jpg'
-import np from '../../img/download.jpeg'
 
 /* Multi idioma */
 import { FormattedMessage } from 'react-intl';
@@ -36,18 +31,18 @@ const About = () => (
                 <p>
                     <FormattedMessage
                         id='my-description'
-                        defaultMessage='I am Mohammed Faiz Nawaz, a passionate and experienced software developer currently pursuing an MS in Computer Science Engineering at the University at Buffalo. With over 2 years of expertise in technologies like  Python, React, .NET Core, Node.js, MongoDB, MSSQL, TailwindCSS, and Next.js, I excel in crafting robust and scalable applications. My journey is marked by a strong problem-solving acumen and a dedication to understanding and addressing real-world challenges through innovative technical solutions. My notable projects and leadership experiences underscore my commitment to excellence and continuous learning.Additionally, my experience as a quality assurance analyst has honed my skills in automation testing, sprint management, and ensuring high standards of product quality.'
+                        defaultMessage='I am a software engineer with 4+ years of experience building full-stack products, cloud infrastructure, automation, and AI-powered systems. I earned my MS in Computer Science at the State University of New York at Buffalo in 2025. My work includes TypeScript, React, Python, Java, Go, AWS, Kubernetes, secure APIs, and distributed systems.'
 
                     />
                 </p>
                 <ul>
                  <li>
-                        <p><span>Email:</span>m47@buffalo.edu</p>
+                        <p><span>Email:</span> mohammedfaiznawaz26@gmail.com</p>
                 </li>
                     
                 </ul>
                 <div className="mas-info">
-                    <a href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf" className="btn-codigo buttonDownload">
+                    <a href={cv} download="Mohammed_Faiz_Nawaz_Resume.pdf" className="btn-codigo buttonDownload">
                         <FormattedMessage
                             id='btn-cv'
                             defaultMessage='Download CV'
@@ -77,16 +72,16 @@ const About = () => (
                         <h5>JavaScript</h5>
                     </div>
                     <div>
-                        <img alt="Sass" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                        <h5>Sass</h5>
+                        <img alt="Next.js" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />
+                        <h5>Next.js</h5>
                     </div>
                     <div>
-                        <img alt="Bootstrap" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
-                        <h5>Bootstrap</h5>
+                        <img alt="Angular" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" />
+                        <h5>Angular</h5>
                     </div>
                     <div>
-                        <img alt="jQuery" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
-                        <h5>jQuery</h5>
+                        <img alt="Tailwind CSS" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" />
+                        <h5>Tailwind</h5>
                     </div>
                     <div>
                         <img alt="React" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
@@ -105,8 +100,8 @@ const About = () => (
                     </div>
                     
                     <div>
-                        <img alt="php" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
-                        <h5>PHP</h5>
+                        <img alt="Python" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                        <h5>Python</h5>
                     </div>
               
                     <div>
@@ -119,7 +114,7 @@ const About = () => (
                     </div>
                     <div>
                         <img alt="mongodb" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
-                        <h5>MongodDB</h5>
+                        <h5>MongoDB</h5>
                     </div>
                 </div>
                 <h4>
@@ -130,8 +125,8 @@ const About = () => (
                 </h4>
                 <div className="skill">
                    <div>
-                        <img alt="Visual Studio Code" className="icons-skils" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Visual_Studio_Code_1.18_icon.svg/1200px-Visual_Studio_Code_1.18_icon.svg.png" title="Visual Studio Code" />
-                        <h5>VS Code</h5>
+                        <img alt="Kubernetes" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" title="Kubernetes" />
+                        <h5>Kubernetes</h5>
                     </div>
                     <div>
                         <img alt="git" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="git" />
@@ -139,16 +134,16 @@ const About = () => (
                     </div>
                       
                     <div>
-                        <img alt="Azure" className="icons-skils" src={az} title="Azure" />
-                        <h5>Azure</h5>
+                        <img alt="AWS" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" title="AWS" />
+                        <h5>AWS</h5>
                     </div>
                     <div>
-                        <img alt="Docker" className="icons-skils" src={dc} title="Docker" width={30}  height={30}/>
+                        <img alt="Docker" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" title="Docker" width={30}  height={30}/>
                         <h5>Docker</h5>
                     </div>
                     <div>
-                        <img alt="Numpy" className="icons-skils" src={np} title="Postman" />
-                        <h5>Numpy</h5>
+                        <img alt="Terraform" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" title="Terraform" />
+                        <h5>Terraform</h5>
                     </div>
                 </div>
             </div>

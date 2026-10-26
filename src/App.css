@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 
 :root{
@@ -31,6 +28,9 @@
     transition: all .2s linear;
 }
 
+h1,h2,h3,h4,h5,h6 { font-weight: inherit; }
+button { font: inherit; }
+
 
 html{
     font-family: 'Poppins', sans-serif;
@@ -44,6 +44,9 @@ main,
     padding:2rem 8%;
     overflow: hidden!important;
 }
+body.dark .resume-project-page,
+body.dark .resume-about-page,
+body.dark .service-page { background: rgb(14, 12, 12); }
 
 
 .loading-pag {

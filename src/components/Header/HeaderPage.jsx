@@ -10,6 +10,8 @@ import DarkMode from '../DarkMode/DarkMode';
 /* Language */
 import { FormattedMessage } from "react-intl";
 import { langContext } from '../../context/Context';
+import enFlag from '../../img/en-flag.svg';
+import esFlag from '../../img/es-flag.svg';
 
 const HeaderPage = () => {
     // Buttom language
@@ -33,7 +35,7 @@ const HeaderPage = () => {
             <div id="menu-btn" className="fas fa-bars" onClick={menuDesplegable}></div>
 
             <NavLink className="logo" to="/" >
-                <p>=(<span>Nawaz2000</span>)=></p>
+                <p>=(<span>Mohammed Faiz Nawaz</span>)</p>
             </NavLink>
 
             <nav className="navbar">
@@ -52,7 +54,7 @@ const HeaderPage = () => {
                 <NavLink to="/service" offset={-150} duration={500}>
                     <FormattedMessage
                         id='services'
-                        defaultMessage='Services'
+                        defaultMessage='Experience'
                     />
                 </NavLink>
                 <NavLink to="/project" offset={-150} duration={500}>
@@ -62,8 +64,8 @@ const HeaderPage = () => {
                     />
                 </NavLink>
                 <div id="buttons">
-                    <img onClick={() => idioma.selectLanguage('en-US')} src="https://Nawaz2000.github.io/Portafoliovirtual/img/en.png" alt="EEUU" />
-                    <img onClick={() => idioma.selectLanguage('es-ES')} src="https://Nawaz2000.github.io/Portafoliovirtual/img/es.png" alt="España" />
+                    <button type="button" onClick={() => idioma.selectLanguage('en-US')} aria-label="English"><img src={enFlag} alt="" /></button>
+                    <button type="button" onClick={() => idioma.selectLanguage('es-ES')} aria-label="Español"><img src={esFlag} alt="" /></button>
                 </div>
             </nav>
             <div className="switch" id="switch">

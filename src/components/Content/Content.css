@@ -30,11 +30,13 @@
 .inicio .titulo h1{
     font-size: 4.5rem;
     color: var(--green);
+    font-weight: 400;
 }
 
 .wrapper {
     margin: 2rem;
 }
+.wrapper.justify-center { justify-content: center; }
 .wrapper .button{
     display: flex;
     flex-direction: row;

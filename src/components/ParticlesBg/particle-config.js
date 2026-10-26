@@ -1,4 +1,5 @@
 const particlesConfig = {
+  background: { color: { value: "transparent" } },
   particles: {
     number: {
       value: 6,

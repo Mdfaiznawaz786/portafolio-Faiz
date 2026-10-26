@@ -332,3 +332,37 @@
     width: 60%;
   }
 }
+
+/* Résumé projects use the existing gallery colors without unrelated screenshots. */
+.resume-projects-grid {
+  grid-template-areas: none;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin: 4rem auto 8rem;
+  width: min(110rem, 94%);
+}
+.resume-projects-grid .projects__item { grid-area: auto; }
+.resume-project-tile {
+  min-height: 22rem;
+  padding: 3rem;
+  background: var(--black);
+  color: var(--white);
+  border: .2rem solid var(--green);
+  border-radius: 1rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.resume-project-tile:hover,
+.resume-project-tile:focus-visible { background: var(--secundario); color: var(--black); }
+.resume-project-tile i { font-size: 4rem; }
+.resume-project-tile span { font-size: 1.5rem; text-transform: none; }
+.resume-project-tile strong { font-size: 2.5rem; text-transform: none; }
+.resume-project-modal { padding: 3rem; }
+.resume-project-modal h2 { font-size: 2.5rem; padding: 1rem 0; }
+.resume-project-modal p { line-height: 1.6; }
+.resume-modal-icon { display: grid; place-items: center; min-height: 22rem; background: var(--black); color: var(--green); border-radius: 1rem; }
+.resume-modal-icon i { font-size: 9rem; }
+@media (max-width: 760px) { .resume-projects-grid { grid-template-columns: 1fr; } }
