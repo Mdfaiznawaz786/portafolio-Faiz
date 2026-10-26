@@ -333,36 +333,139 @@
   }
 }
 
-/* Résumé projects use the existing gallery colors without unrelated screenshots. */
-.resume-projects-grid {
-  grid-template-areas: none;
+/* Project cards use the same two-column rhythm and cyan hover accent as experience. */
+.projects .project-showcase {
+  display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin: 4rem auto 8rem;
-  width: min(110rem, 94%);
+  gap: 2rem;
+  margin: 0 auto 6rem;
 }
-.resume-projects-grid .projects__item { grid-area: auto; }
-.resume-project-tile {
-  min-height: 22rem;
-  padding: 3rem;
+
+.projects .project-showcase .project-card {
+  min-width: 0;
+  min-height: 34rem;
+  padding: 2.5rem;
+  background: var(--white);
+  border: var(--borde);
+  border-bottom: 1rem solid var(--white);
+  box-shadow: var(--box-shadow);
+  color: var(--light-color-white);
+  transition: transform .3s ease, border-color .3s ease, background .3s ease;
+}
+
+.projects .project-showcase .project-card:hover,
+.projects .project-showcase .project-card:focus-within {
+  transform: translateY(-.5rem);
   background: var(--black);
+  border-bottom-color: var(--green);
   color: var(--white);
-  border: .2rem solid var(--green);
-  border-radius: 1rem;
-  text-align: left;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1rem;
 }
-.resume-project-tile:hover,
-.resume-project-tile:focus-visible { background: var(--secundario); color: var(--black); }
-.resume-project-tile i { font-size: 4rem; }
-.resume-project-tile span { font-size: 1.5rem; text-transform: none; }
-.resume-project-tile strong { font-size: 2.5rem; text-transform: none; }
-.resume-project-modal { padding: 3rem; }
-.resume-project-modal h2 { font-size: 2.5rem; padding: 1rem 0; }
-.resume-project-modal p { line-height: 1.6; }
-.resume-modal-icon { display: grid; place-items: center; min-height: 22rem; background: var(--black); color: var(--green); border-radius: 1rem; }
-.resume-modal-icon i { font-size: 9rem; }
-@media (max-width: 760px) { .resume-projects-grid { grid-template-columns: 1fr; } }
+
+.projects .project-card > i {
+  font-size: 3rem;
+  color: var(--black);
+  margin-bottom: 1.2rem;
+}
+
+.projects .project-card:hover > i,
+.projects .project-card:focus-within > i {
+  color: var(--green);
+}
+
+.projects .project-card .project-category,
+.project-modal-content .project-category {
+  display: block;
+  color: var(--secundario);
+  font-size: 1.5rem;
+  text-transform: none;
+  margin-bottom: .8rem;
+}
+
+.projects .project-card h3 {
+  color: var(--black);
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+
+.projects .project-card:hover h3,
+.projects .project-card:focus-within h3 { color: var(--white); }
+
+.projects .project-card p {
+  margin: 0 0 2rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.project-actions button,
+.project-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 4rem;
+  padding: .8rem 1.2rem;
+  border: .2rem solid var(--green);
+  border-radius: .5rem;
+  background: var(--green);
+  color: var(--black);
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: none;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.project-actions a { background: transparent; color: var(--secundario); }
+.project-actions a span { margin-left: .5rem; }
+.project-actions button:hover,
+.project-actions a:hover,
+.project-actions button:focus-visible,
+.project-actions a:focus-visible { transform: translateY(-.25rem); background: var(--secundario); color: var(--black); }
+
+body.dark .projects .project-showcase .project-card {
+  background: #111;
+  border: var(--borde-claro);
+  border-bottom-color: #111;
+  color: var(--light-color);
+}
+
+body.dark .projects .project-showcase .project-card:hover,
+body.dark .projects .project-showcase .project-card:focus-within { border-bottom-color: var(--green); }
+body.dark .projects .project-card h3 { color: var(--white); }
+body.dark .projects .project-card > i { color: var(--light-color); }
+body.dark .projects .project-card:hover > i,
+body.dark .projects .project-card:focus-within > i { color: var(--green); }
+
+.project-collection .heading { margin-top: 7rem; }
+.overlay { backdrop-filter: blur(4px); }
+.contenedor-modal { max-height: min(85vh, 70rem); overflow-y: auto; }
+body.dark .contenedor-modal { background: #111; color: var(--white); border: .1rem solid var(--green); }
+body.dark .boton-cerrar { color: var(--white); }
+
+.project-modal-content { padding: 2rem; }
+.project-modal-content > i { color: var(--secundario); font-size: 4rem; margin-bottom: 1rem; }
+.project-modal-content h2 { color: var(--black); font-size: 3rem; margin-bottom: 1.5rem; }
+.project-modal-content p { font-size: 1.7rem; line-height: 1.7; text-transform: none; margin-bottom: 1.5rem; }
+.project-modal-content .project-stack strong { color: var(--secundario); text-transform: none; }
+body.dark .project-modal-content h2 { color: var(--white); }
+
+@media (max-width: 760px) {
+  .projects .project-showcase { grid-template-columns: minmax(0, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects .project-showcase .project-card,
+  .project-actions button,
+  .project-actions a { transition: none; }
+  .projects .project-showcase .project-card:hover,
+  .projects .project-showcase .project-card:focus-within { transform: none; }
+}

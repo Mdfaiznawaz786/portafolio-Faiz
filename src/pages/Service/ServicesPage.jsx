@@ -13,9 +13,9 @@ const Services = () => (
     <main className="service-page">
       <section className="servicios">
         <h1 className="heading">Experience</h1>
-        <div className="row">
-          {experience.map((job) => (
-            <div className="columns" key={job.company}>
+        <div className="row experience-timeline">
+          {experience.map((job, index) => (
+            <div className="columns" data-order={String(index + 1).padStart(2, '0')} data-aos="fade-up" data-aos-delay={150 + (index % 2) * 100} key={job.company}>
               <i className={job.icon} aria-hidden="true"></i>
               <h3>{job.role} at {job.company}</h3>
               <p>{job.dates}</p>

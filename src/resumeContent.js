@@ -44,6 +44,14 @@ export const experience = [
 
 export const projects = [
   {
+    title: 'FitFuel',
+    category: 'AI meal planning and grocery tracking',
+    icon: 'fas fa-utensils',
+    description: 'A diet planning web app with profile-based meal plans, grocery lists, and self-reported spending. The current web flow uses Gemini through a NestJS API and stores plans in Supabase.',
+    stack: 'Next.js · NestJS · Supabase · Gemini',
+    sourceUrl: 'https://github.com/Mdfaiznawaz786/FitFuel',
+  },
+  {
     title: 'Project Sentinel',
     category: 'Autonomous self-healing infrastructure',
     icon: 'fas fa-shield-alt',
@@ -56,13 +64,6 @@ export const projects = [
     icon: 'fas fa-calendar-check',
     description: 'An NLP-driven assistant using GPT and LangGraph to coordinate multi-step scheduling across Google Calendar and messaging APIs.',
     stack: 'FastAPI · LangGraph · GPT · Google Calendar API',
-  },
-  {
-    title: 'FitFuel',
-    category: 'AI diet application',
-    icon: 'fas fa-utensils',
-    description: 'A DistilGPT-2 meal planner served through FastAPI with a responsive Next.js interface and a Dockerized NGINX deployment.',
-    stack: 'DistilGPT-2 · FastAPI · Next.js · Docker',
   },
   {
     title: 'TacoDB',

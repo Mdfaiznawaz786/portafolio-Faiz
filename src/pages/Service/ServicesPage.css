@@ -35,6 +35,55 @@
     color: var(--white);
 }
 
+.servicios .experience-timeline {
+    position: relative;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+}
+
+.servicios .experience-timeline::before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    bottom: 1rem;
+    left: 50%;
+    width: .2rem;
+    background: var(--green);
+    transform: translateX(-50%);
+}
+
+.servicios .experience-timeline .columns {
+    position: relative;
+    margin: 0;
+    padding: 2rem;
+    z-index: 1;
+}
+
+.servicios .experience-timeline .columns::before {
+    content: attr(data-order);
+    position: absolute;
+    right: 1.5rem;
+    top: 1.2rem;
+    color: var(--secundario);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.servicios .experience-timeline .columns p {
+    margin-bottom: 1.4rem;
+}
+
+@media (max-width: 760px) {
+    .servicios .experience-timeline {
+        grid-template-columns: minmax(0, 1fr);
+        padding-left: 2rem;
+    }
+
+    .servicios .experience-timeline::before {
+        left: .5rem;
+    }
+}
+
 
 /********************** Services seccion **********************/
 

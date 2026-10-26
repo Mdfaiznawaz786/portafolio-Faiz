@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Modal = ({
     children,
     estado,
     cambiarEstado
 }) => {
+    useEffect(() => {
+        if (!estado) return undefined;
+        const closeOnEscape = (event) => {
+            if (event.key === 'Escape') cambiarEstado(false);
+        };
+        window.addEventListener('keydown', closeOnEscape);
+        return () => window.removeEventListener('keydown', closeOnEscape);
+    }, [estado, cambiarEstado]);
+
     return (
         <>
             {estado &&
