@@ -28,3 +28,4 @@ Project cards deliberately have no repository or demo links because the supplied
 ## Security
 
 Run `npm audit --audit-level=moderate` after dependency changes. See [SECURITY.md](SECURITY.md) for reporting information.
+The GitHub Actions workflow repeats the audit and build on pushes and pull requests. Production HTML includes a restrictive Content Security Policy; the development server remains compatible with hot reload.

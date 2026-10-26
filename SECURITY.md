@@ -1,21 +1,9 @@
 # Security Policy
 
-## Supported Versions
+## Supported version
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Security fixes are applied to the current `master` branch. Older builds are not maintained.
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Reporting a vulnerability
 
-## Reporting a Vulnerability
-
-Use this section to tell people how to report a vulnerability.
-
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Please report suspected vulnerabilities privately to mohammedfaiznawaz26@gmail.com. Include the affected URL or file, steps to reproduce, and potential impact. Avoid posting exploit details in a public issue before a fix is available.
